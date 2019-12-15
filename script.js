@@ -75,3 +75,18 @@ console.log(tenAdder(43))
 // document.body.addEventListener('click', bodyClicked)
 
 /******************************* */ 
+// Promise
+
+fetch('https://www.reddit.com/r/javascript/.json')
+    .then(res => res.jsoon())
+    .then(result => {
+        console.log(result)
+    })
+// Can also be written as:
+const resJSON = res => res.json();
+const logResult = result => {
+    console.log(result)
+}
+fetch('https://www.reddit.com/r/javascript/.json')
+.then(resJSON)
+.then(logResult)
