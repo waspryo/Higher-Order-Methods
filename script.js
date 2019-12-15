@@ -53,3 +53,16 @@ function greet(getNameFn, greeting) {
 // const greet = (getNameFn, greeting) => console.log(`${greeting} ${getNameFn()}`);
 greet(getName, 'hello')
 // console.log(greet)
+
+// function makeAdder(num) {
+//     return (other_num) => {
+//         return num + other_num
+//     }
+// }
+const makeAdder = (num) => 
+(other_num) => other_num + num;
+
+const tenAdder = makeAdder(10)
+console.log(tenAdder(2))
+console.log(tenAdder(43))
+
