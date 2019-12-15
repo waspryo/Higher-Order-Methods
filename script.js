@@ -105,3 +105,13 @@ const numbers = [1, 2, 3, 4, 5 ];
 numbers.forEach((number, index, array) => {
     console.log(number, index, array)
 })
+
+const flavors = ['chocolate', 'ginger', 'carrot', 'coffee', 'walnut', 'banana'];
+
+for (let i = 0; i < flavors.length; i++) {
+    console.log('I like ' + flavors[i] + ' cake');   
+}
+
+flavors.forEach((flavor) => {
+    console.log(`I like ${flavor}`)
+}) 
