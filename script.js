@@ -77,16 +77,31 @@ console.log(tenAdder(43))
 /******************************* */ 
 // Promise
 
-fetch('https://www.reddit.com/r/javascript/.json')
-    .then(res => res.jsoon())
-    .then(result => {
-        console.log(result)
-    })
-// Can also be written as:
-const resJSON = res => res.json();
-const logResult = result => {
-    console.log(result)
+// fetch('https://www.reddit.com/r/javascript/.json')
+//     .then(res => res.jsoon())
+//     .then(result => {
+//         console.log(result)
+//     })
+// // Can also be written as:
+// const resJSON = res => res.json();
+// const logResult = result => {
+//     console.log(result)
+// }
+// fetch('https://www.reddit.com/r/javascript/.json')
+// .then(resJSON)
+// .then(logResult)
+
+const numbersArray = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbersArray.length; i++) {
+    const number = numbersArray[i];
+    console.log(number);
 }
-fetch('https://www.reddit.com/r/javascript/.json')
-.then(resJSON)
-.then(logResult)
+numbersArray.forEach((number) => {
+    console.log(number)
+})
+
+const numbers = [1, 2, 3, 4, 5 ];
+numbers.forEach((number, index, array) => {
+    console.log(number, index, array)
+})
