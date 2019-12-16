@@ -136,3 +136,24 @@ evenNumbers.forEach((number, index, array) => {
     array[index] = number * 2
 })
 console.log(evenNumbers)
+
+let products = [{
+    name: 'Runnig shoes',
+    price: 75
+}, {
+    name: 'golf shoes',
+    price: 85
+}, {
+    name: 'Dress shoes',
+    price: 95
+}, {
+    name: 'Walking shoes',
+    price: 65
+}, {
+    name: 'Sandals',
+    price: 55
+}
+]
+products.forEach(product => {
+    console.log(`My ${product.name} is ${product.price}`)
+})
