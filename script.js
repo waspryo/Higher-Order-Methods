@@ -205,3 +205,20 @@ numbers_2.forEach(number => {
     doubledNumbers.push(number * 2)
 })
 console.log(doubledNumbers)
+
+let all_numbers = [1,2,3,4,5,6,7,8,9,10]
+let evenNumbers_1 = [];
+
+for (let i = 0; i < all_numbers.length; i++) {
+    const number = all_numbers[i];
+    if (number % 2 === 0) {
+        evenNumbers_1.push(number)
+    }
+}
+all_numbers.forEach(number => {
+    if (number % 2 === 0) {
+        evenNumbers_1.push(number)   
+    }
+})
+
+console.log(evenNumbers_1)
