@@ -168,3 +168,21 @@ for (let i = 0; i < numbers_1.length; i++) {
     sum += number; // 3. Update the accumulator variables
 }
 console.log(sum)
+
+let numbers_2 = [1,2,3,4,5]
+let doubledNumbers = [] // 1.Initialize accumulator variable
+
+// 2. Iterate over an array
+for (let i = 0; i < numbers_2.length; i++) {
+    const number = numbers_2[i];
+    doubledNumbers.push(number * 2) // 3. Update the accumulator variable
+}
+console.log(doubledNumbers)
+
+let numbers_3 = [1,2,3,4,5]
+let sum1 = 0;
+
+numbers_3.forEach((number) => {
+    sum1 += number;
+})
+console.log(sum1)
