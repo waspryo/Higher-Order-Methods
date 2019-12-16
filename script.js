@@ -115,3 +115,24 @@ for (let i = 0; i < flavors.length; i++) {
 flavors.forEach((flavor) => {
     console.log(`I like ${flavor}`)
 }) 
+
+const nums = [2, 4, 6, 8]
+for (let i = 0; i < nums.length; i++) {
+    console.log('the number', nums[i], 'is at index', i)
+}
+
+// nums.forEach((num, index) => {
+//     console.log(`the number ${num} is at index ${index}`)
+// })
+
+const evenNumbers = [2, 4, 6, 8]
+for (let i = 0; i < nums.length; i++) {
+    evenNumbers[i] = evenNumbers[i] * 2
+}
+
+console.log(evenNumbers)
+
+evenNumbers.forEach((number, index, array) => {
+    array[index] = number * 2
+})
+console.log(evenNumbers)
