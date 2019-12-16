@@ -157,3 +157,14 @@ let products = [{
 products.forEach(product => {
     console.log(`My ${product.name} is ${product.price}`)
 })
+
+let numbers_1 = [1,2,3,4,5];
+// 1. Initialize accumulater variable
+let sum = 0;
+
+// 2. Iterate over an array
+for (let i = 0; i < numbers_1.length; i++) {
+    const number = numbers_1[i];
+    sum += number; // 3. Update the accumulator variables
+}
+console.log(sum)
