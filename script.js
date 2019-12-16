@@ -200,3 +200,8 @@ things.forEach(thing => {
     copiedThings.push(thing)
 })
 console.log(copiedThings)
+
+numbers_2.forEach(number => {
+    doubledNumbers.push(number * 2)
+})
+console.log(doubledNumbers)
