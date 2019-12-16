@@ -186,3 +186,17 @@ numbers_3.forEach((number) => {
     sum1 += number;
 })
 console.log(sum1)
+
+let things = ['shoe', 'table', 'book', 'computer', 'phone']
+let copiedThings = []
+
+for (let i = 0; i < things.length; i++) {
+    const thing = things[i];
+    copiedThings.push(thing)
+}
+console.log(copiedThings)
+
+things.forEach(thing => {
+    copiedThings.push(thing)
+})
+console.log(copiedThings)
